@@ -1,0 +1,88 @@
+
+.App-logo {
+    float: left;
+    animation: App-logo-spin infinite 20s linear;
+    height: 45px;
+    width: 45px;
+}
+
+.GitHub-logo {
+    margin: 0 0 2px 0;
+    height: 16px;
+    width: 20px;
+}
+
+.App-header {
+    height: 45px;
+    background: -webkit-linear-gradient(#d6d6d8, black, white);
+    color: white;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.center-title {
+    text-align: center;
+    padding-top: 7px;
+    font-size: larger;
+    letter-spacing: 20px;
+}
+
+.left-time {
+    float: left;
+    font-size: 1.0em;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 0 5px;
+}
+
+.left-menu {
+    width: 240px !important;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 40px;
+    top: 50px;
+}
+
+.switch-icon {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    z-index: 100
+}
+
+.footer {
+    height: 45px;
+    background: -webkit-linear-gradient(white, black, #d6d6d8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 11
+}
+
+.ant-layout-aside {
+    position: relative;
+    min-height: 100%;
+}
+
+.ant-layout-aside .ant-aside-action {
+    height: 42px;
+    width: 224px;
+    position: fixed;
+    bottom: 0;
+    background: #656565;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ant-layout-aside-collapse .ant-aside-action {
+    width: 64px;
+    transition: all 0.3s ease;
+}

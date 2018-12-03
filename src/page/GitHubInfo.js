@@ -4,9 +4,10 @@ import Util  from '../commom/util';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const LIMIT = 7;
+const TOKEN = 'c49181707b1716005152e834ccad11844bd2c8f6';
 let gitHubInfo = [], link, total, _this;
 
-class Option1 extends React.Component {
+class StarsInfo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -95,7 +96,7 @@ class Option1 extends React.Component {
 
     fetchData(param) {
         this.setState({ loading: true });
-        let url = `https://api.github.com/users/linkun-wang/starred?per_page=${param.pageSize}&page=${param.current}&access_token=4733bea8437c8067ddcfd5913306feddacd54fbd`;
+        let url = `https://api.github.com/users/linkun-wang/starred?per_page=${param.pageSize}&page=${param.current}&access_token=${TOKEN}`;
         fetch(url).then( resp => {
             if (resp.status === 200) {
                 link = resp.headers.get('link');
@@ -160,4 +161,4 @@ class Option1 extends React.Component {
     }
 }
 
-export default Option1;
+export default StarsInfo;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, Col, Row } from 'antd';
-import leon from '../images/leon.png';
+import Leon from '../images/Leon.jpeg';
 import Totoro from '../images/Totoro.gif';
-import cry from '../images/cry.gif';
+import Weightlifting from '../images/weightlifting.gif';
 
 const { Meta } = Card;
 
@@ -13,7 +13,7 @@ class Overview extends React.Component {
                 <Row gutter={16}>
                     <Col span={5}>
                         <Card hoverable style={{ width: 240 }}
-                            cover={<img alt="example" src={ leon } />}>
+                            cover={<img alt="example" src={ Leon } />}>
                             <Meta title="Leon" description="This guy is handsomer than me !!-_-"/>
                         </Card>
                     </Col>
@@ -37,8 +37,8 @@ class Overview extends React.Component {
                     </Col>
                     <Col span={4}>
                         <Card hoverable style={{ width: 240 }}
-                              cover={<img alt="example" src={ cry } />}>
-                            <Meta title="Crying" description="HAHAHAHA"/>
+                              cover={<img alt="example" src={ Weightlifting } />}>
+                            <Meta title="Weightlifting..." description="HAHAHAHA"/>
                         </Card>
                     </Col>
                 </Row>

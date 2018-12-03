@@ -1,9 +1,9 @@
 {
   "name": "my-react-app",
   "version": "0.1.0",
+  "homepage": "https://linkun-wang.github.io/my-app",
   "private": true,
   "dependencies": {
-    "antd": "^3.6.2",
     "d3": "^5.7.0",
     "d3-tip": "^0.7.1",
     "echarts": "^4.1.0",
@@ -14,13 +14,17 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^2.0.3",
+    "antd": "^3.10.9",
+    "yarn": "^1.12.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +34,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

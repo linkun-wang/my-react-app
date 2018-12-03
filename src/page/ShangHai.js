@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Table, message, notification } from 'antd';
-import Util  from '../commom/util';
+import Util from '../common/util';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 class ShangHai extends React.Component {

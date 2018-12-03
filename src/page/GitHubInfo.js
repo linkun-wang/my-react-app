@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Table, message, notification } from 'antd';
-import Util  from '../commom/util';
+import Util from '../common/util';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const LIMIT = 7;
@@ -154,7 +154,7 @@ class StarsInfo extends React.Component {
                         loading={this.state.loading}
                         pagination={this.pagination}
                         onChange={this.handleTableChange.bind(this)}
-                        scroll={{ x: 1650, y: 585 }} />
+                        scroll={{ x: 1650, y: 525 }} />
                 </Card>
             </div>
         )

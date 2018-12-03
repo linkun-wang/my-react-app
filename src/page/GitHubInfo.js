@@ -96,7 +96,7 @@ class StarsInfo extends React.Component {
 
     fetchData(param) {
         this.setState({ loading: true });
-        let url = `https://api.github.com/users/linkun-wang/starred?per_page=${param.pageSize}&page=${param.current}&access_token=${TOKEN}`;
+        let url = `https://api.github.com/users/linkun-wang/starred?per_page=${param.pageSize}&page=${param.current}`;
         fetch(url).then( resp => {
             if (resp.status === 200) {
                 link = resp.headers.get('link');

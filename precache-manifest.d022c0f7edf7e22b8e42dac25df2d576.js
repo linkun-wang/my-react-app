@@ -4,24 +4,24 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "3a3962a607046595ef66",
-    "url": "/my-app/static/css/main.49b8afb6.chunk.css"
+    "revision": "085d8d8aff04d8d41289",
+    "url": "/my-app/static/css/main.d0525d70.chunk.css"
   },
   {
     "revision": "012aee4ea4085d21192d2e9b94412440",
     "url": "/my-app/static/media/weightlifting.012aee4e.gif"
   },
   {
-    "revision": "8112d01c7893e4afe795",
-    "url": "/my-app/static/js/1.8112d01c.chunk.js"
+    "revision": "2c605b427cd5f3afd0fb",
+    "url": "/my-app/static/js/1.2c605b42.chunk.js"
   },
   {
     "revision": "a3bd857c0333674b1d75",
     "url": "/my-app/static/js/runtime~main.a3bd857c.js"
   },
   {
-    "revision": "3a3962a607046595ef66",
-    "url": "/my-app/static/js/main.3a3962a6.chunk.js"
+    "revision": "085d8d8aff04d8d41289",
+    "url": "/my-app/static/js/main.085d8d8a.chunk.js"
   },
   {
     "revision": "115b00d89d0319a537367476c4629b54",
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/Totoro.c49920df.gif"
   },
   {
-    "revision": "8112d01c7893e4afe795",
-    "url": "/my-app/static/css/1.e977f53b.chunk.css"
+    "revision": "2c605b427cd5f3afd0fb",
+    "url": "/my-app/static/css/1.1aeee8a3.chunk.css"
   },
   {
-    "revision": "0a970e7b8049076c74c859c21fcc5700",
+    "revision": "08cbb22946c06b6446cee800800f592e",
     "url": "/my-app/index.html"
   }
 ];

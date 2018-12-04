@@ -1,4 +1,9 @@
 class Util {
+    constant = {
+        GITHUB_TOKEN: '',
+        MAP_KEY: 'caccd696b2aef003ebbf0cfc9167dce5'
+    };
+
     getQueryString = (str, name) => {
         const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
         const r = str.match(reg);

@@ -3,6 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import LeftMenu from './page/LeftMenu';
 import Overview from './page/Overview';
 import GitHubStars from './page/GitHubInfo';
+import Footprint from './page/Footprint';
 import AnYang from './page/AnYang';
 import LuoYang from './page/LuoYang';
 import ShangHai from './page/ShangHai';
@@ -15,6 +16,7 @@ export const ContentRoute = () =>
     <Switch>
         <Route exact path="/" component={ Overview }/>
         <Route exact path="/stars-info" component={ GitHubStars }/>
+        <Route exact path="/footprint" component={ Footprint }/>
         <Route exact path="/anYang" component={ AnYang }/>
         <Route exact path="/luoYang" component={ LuoYang }/>
         <Route exact path="/shangHai" component={ ShangHai }/>

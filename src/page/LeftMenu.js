@@ -30,6 +30,7 @@ export default class LeftMenu extends Component {
                     <SubMenu key="sub1" title={<span><Icon type="mail" /><span>信息展示</span></span>}>
                         <MenuItemGroup key="g1" title="个人信息">
                             <Menu.Item key="/stars-info"><Link to="/stars-info">GiHub收藏项目</Link></Menu.Item>
+                            <Menu.Item key="/footprint"><Link to="/footprint" replace>足迹</Link></Menu.Item>
                         </MenuItemGroup>
                         <MenuItemGroup key="g2" title="足迹">
                             <Menu.Item key="/anYang"><Link to="/anYang">安阳</Link></Menu.Item>

@@ -6,7 +6,7 @@
 
 #### 项目简介
 
-自己练习react所建项目，组件主要采用蚂蚁金服antd已经其他github开源组件。
+自己练习react所建项目，组件主要采用蚂蚁金服antd以及其他github开源组件。
 
 ##### 1、项目目录说明
 
@@ -33,7 +33,7 @@
 ##### 4、项目打包
         $ npm run build
         
-##### 5、项目部署至github-page
+##### 5、项目部署至github-page(https://linkun-wang.github.io/my-app/)
         $ yarn run deploy
 
 -------------------

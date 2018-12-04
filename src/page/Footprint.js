@@ -82,7 +82,7 @@ class Footprint extends React.Component {
     render() {
         const { current, center } = this.state;
         return (
-            <div style={{ background: '#ffffff', padding: '30px' }}>
+            <div style={{ background: '#ffffff', padding: '30px', height: '100%' }}>
                 <Steps current={ current }>
                     {steps.map(item => <Step key={item.title} title={item.title} description={item.desc} icon={<MyIcon type={item.icon} />}/>)}
                 </Steps>

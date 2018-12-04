@@ -23,7 +23,7 @@ class App extends Component {
     };
 
     render() {
-        let left = this.state.collapsed ? '45%' : '40%';
+        let left = this.state.collapsed ? '35%' : '40%';
         return (
             <div style={{height: '100%'}}>
                 <header className="App-header">
@@ -39,7 +39,7 @@ class App extends Component {
                               onClick={this.toggle}/>
                     </Sider>
                     <Layout className={this.state.collapsed ? 'content-normal' : 'content-max'} >
-                        <Content style={{ margin: 0, minHeight: 280 }}>
+                        <Content style={{ margin: 0, height:'100%' }}>
                            <ContentRoute />
                         </Content>
                         <Footer style={{ textAlign: 'center', position:'fixed', bottom:0, left:left }}>

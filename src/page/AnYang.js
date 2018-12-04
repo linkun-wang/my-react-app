@@ -32,6 +32,7 @@ class AnYang extends React.Component {
                 }]
         };
         this.markerPosition = this.mapParams.position;
+        this.mapHeight = document.getElementById('root').clientHeight * 0.7 + 'px';
     }
 
     componentDidMount() {
@@ -43,10 +44,11 @@ class AnYang extends React.Component {
     }
 
     render() {
+        const height = this.mapHeight;
         return (
             <div style={{ background: '#ECECEC', padding: '30px' }}>
                 <Card hoverable title='"天有玄鸟，降而生商"' bordered={false} style={{ width: 'auto' }}>
-                    <div style={{width:'auto', height:700}}>
+                    <div id="anyangMap" style={{width:'auto', height:`${height}`}}>
                         <Map amapkey={ this.mapParams.amapKey }
                              center={ this.mapParams.position }
                              zoom={ this.mapParams.zoom }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, Steps, Icon, Button, message } from 'antd';
-import { Map, Marker } from 'react-amap';
+import { Map, Marker, Polyline } from 'react-amap';
 import Util from '../common/util';
+import Typed from 'typed.js';
 
 const Step = Steps.Step;
 const MyIcon = Icon.createFromIconfontCN({ // 调用在iconfont.cn上自行管理的图标
@@ -10,19 +11,23 @@ const MyIcon = Icon.createFromIconfontCN({ // 调用在iconfont.cn上自行管�
 const steps = [
     {
         title:'安阳', icon:'icon-shang',
+        info:'【东经114，北纬36】',
         desc:'"天有玄鸟，降而生商"',
         position: { longitude: 114.352482, latitude: 36.103442 }
     },{
         title:'洛阳', icon:'icon-datang',
+        info:'【东经112，北纬34】',
         desc:'"欲知古今兴废事，请君只看洛阳城"',
         position: { longitude: 112.434468, latitude: 34.663041 }
     },{
         title:'上海', icon:'icon-shanghai3',
-        desc:'"年前回上海来，对于久违了的上海人的第一个印象是白与胖"',
+        info:'【东经121，北纬31】',
+        desc:'"年前回上海来，\n对于久违了的上海人的第一个印象是^300白与胖"',
         position: { longitude: 121.473658, latitude: 31.230378 }
     },{
         title:'杭州', icon:'icon-hangzhou',
-        desc:'"江南忆，最忆是杭城"',
+        info:'【东经120，北纬30】',
+        desc:'江\n南\n忆\n,\n最\n忆\n是\n杭\n城',
         position: { longitude: 120.152422, latitude: 30.284945 }
     }
 ];
@@ -32,7 +37,8 @@ class Footprint extends React.Component {
         super(props);
         this.state = {
             current: 0,
-            center: steps[0].position
+            center: steps[0].position,
+            path: [steps[0].position]
         };
         this.mapParams = {
             amapKey: Util.constant.MAP_KEY,
@@ -57,44 +63,79 @@ class Footprint extends React.Component {
                 }]
         };
         this.markerPosition = this.mapParams.position;
+        this.amapEvents = {
+            created: (ins) => {
+                this.mapInstance = ins
+            }
+        };
+        this.options = {
+            strings: [steps[0].desc],
+            typeSpeed: 120,
+            backSpeed: 120
+        };
     }
 
     next() {
+        if (this.mapInstance && this.mapInstance.getZoom() !== this.mapParams.zoom) {
+            this.mapInstance.setZoom(this.mapParams.zoom)
+        }
         const current = this.state.current + 1;
         const center = steps[current].position;
-        this.setState({ current, center });
+        let path = this.state.path.concat([center]); // 此处不能用push方法，push方法只是修改数据状态，并不会返回一个新的数组
+        this.setState({ current, center, path },(()=>{
+            this.typed.destroy();
+            this.options.strings = [steps[this.state.current].desc];
+            this.typed = new Typed(this.el, this.options);
+        }));
     }
 
     prev() {
+        if (this.mapInstance && this.mapInstance.getZoom() !== this.mapParams.zoom) {
+            this.mapInstance.setZoom(this.mapParams.zoom)
+        }
         const current = this.state.current - 1;
         const center = steps[current].position;
-        this.setState({ current, center });
+        let path = this.state.path.slice(0,this.state.current);
+        this.setState({ current, center, path },(()=>{
+            this.typed.destroy();
+            this.options.strings = [steps[this.state.current].desc];
+            this.typed = new Typed(this.el, this.options);
+        }));
     }
 
     componentDidMount() {
-
+        this.typed = new Typed(this.el, this.options);
     }
 
     componentWillReceiveProps(nextProps) {
 
     }
 
+    componentWillUnmount() {
+        this.typed.destroy();
+    }
+
     render() {
-        const { current, center } = this.state;
+        const { current, center, path } = this.state;
         return (
             <div style={{ background: '#ffffff', padding: '30px', height: '100%' }}>
                 <Steps current={ current }>
-                    {steps.map(item => <Step key={item.title} title={item.title} description={item.desc} icon={<MyIcon type={item.icon} />}/>)}
+                    {steps.map(item => <Step key={item.title} title={item.title} description={item.info} icon={<MyIcon type={item.icon} />}/>)}
                 </Steps>
                 <div className="steps-content">
                     <Map amapkey={ this.mapParams.amapKey }
                          center={ center }
                          zoom={ this.mapParams.zoom }
-                         plugins={ this.mapParams.plugins }>
+                         plugins={ this.mapParams.plugins }
+                         events={ this.amapEvents }>
                         <Marker position={ center }
                                 animation="AMAP_ANIMATION_BOUNCE">
                         </Marker>
+                        <Polyline path={ path } showDir="true"/>
                     </Map>
+                    <div className="typer-div">
+                        <span style={{ whiteSpace: 'pre' }} ref={(el) => { this.el = el; }}/>
+                    </div>
                 </div>
                 <div className="steps-action">
                     {

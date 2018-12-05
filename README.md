@@ -36,6 +36,12 @@
 ##### 5、项目部署至github-page(https://linkun-wang.github.io/my-app/)
         $ yarn run deploy
 
+##### PS: 开发中遇到的坑：
+###### state（参考：https://www.jianshu.com/p/c6257cbef1b1）
+        1、React中的state类型应为不可变类型（数字，字符串，布尔值，null， undefined）
+        2、如果state类型是数组，则需注意：
+            进行'增删改'等操作时应选用可以返回新数组的函数，比如：往数组中添加新元素，不要用push()，应该用contact()方法
+        3、state类型是普通对象（不包含字符串、数组），则可以使用ES6的Object.assgin函数和对象扩展语法    
 -------------------
 
 

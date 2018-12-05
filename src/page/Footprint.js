@@ -134,7 +134,7 @@ class Footprint extends React.Component {
                         <Polyline path={ path } showDir="true"/>
                     </Map>
                     <div className="typer-div">
-                        <span style={{ whiteSpace: 'pre' }} ref={(el) => { this.el = el; }}/>
+                        <span style={{ whiteSpace: 'pre', fontFamily: 'yuweif16243dc8601eba6' }} ref={(el) => { this.el = el; }}/>
                     </div>
                 </div>
                 <div className="steps-action">

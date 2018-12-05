@@ -99,3 +99,34 @@
     text-align: center;
     margin-top: 25px;
 }
+
+.typed-cursor{
+    display: none;
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+}
+.typed-fade-out{
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+}
+
+.typer-div {
+    position: absolute;
+    top: 25%;
+    left: 43.5%;
+    font-size: 2.5em;
+    font-family: STXingkai;
+    font-weight: 900;
+}

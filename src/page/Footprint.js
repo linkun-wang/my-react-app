@@ -27,7 +27,7 @@ const steps = [
     },{
         title:'杭州', icon:'icon-hangzhou',
         info:'【东经120，北纬30】',
-        desc:'江\n南\n忆\n,\n最\n忆\n是\n杭\n城',
+        desc:'江\n南\n忆\n,\n最\n忆\n是\n杭\n州',
         position: { longitude: 120.152422, latitude: 30.284945 }
     }
 ];

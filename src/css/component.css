@@ -130,3 +130,25 @@
     font-family: STXingkai;
     font-weight: 900;
 }
+
+.amap-logo, .amap-copyright {
+    display: none !important;
+}
+
+#shapeRect {
+    transition: 1s all ease;
+}
+
+#shapeRect:hover {
+    stroke-dasharray: 70 0;
+    stroke-dashoffset: 0;
+    stroke: #06D6A0
+}
+
+@font-face {font-family: 'webfont';
+    src: url('//at.alicdn.com/t/webfont_a35jl8d0gjr.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_a35jl8d0gjr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_a35jl8d0gjr.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_a35jl8d0gjr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_a35jl8d0gjr.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
+}

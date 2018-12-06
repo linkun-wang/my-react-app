@@ -12,7 +12,7 @@ const steps = [
     {
         title:'安阳', icon:'icon-shang',
         info:'【东经114，北纬36】',
-        desc:'"天有玄鸟，降而生商"',
+        desc:'"天命玄鸟，降而生商"',
         position: { longitude: 114.352482, latitude: 36.103442 }
     },{
         title:'洛阳', icon:'icon-datang',

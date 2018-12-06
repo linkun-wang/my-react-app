@@ -1,38 +1,16 @@
 import React from 'react';
-import { Card, Table, message, notification } from 'antd';
+import { Card, Table, message, notification, Tooltip } from 'antd';
 import Util from '../common/util';
 import { Map, Marker } from 'react-amap';
 
-class AnYang extends React.Component {
+const text = <span style={{fontFamily:'webfont'}}>是不是看着头晕，哈哈哈</span>;
+
+class SVGDemo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             loading: false
         };
-        this.mapParams = {
-            amapKey: Util.constant.MAP_KEY,
-            position: { longitude: 114.352482, latitude: 36.103442 },
-            zoom: 6,
-            plugins: ['Scale', //比例尺
-                {
-                    name: 'OverView', //鹰眼
-                    options: {
-                        isOpen: true
-                    }
-                }, {
-                    name: 'ToolBar',
-                    options: {
-                        liteStyle: true, // 精简模式
-                        ruler: true, // 标尺键盘是否可见
-                        noIpLocate: true, // 定位失败后，是否开启IP定位
-                        locate: true, // 是否显示定位按钮
-                        autoPosition: false, // 是否在地图初始化完成后自动定位
-                        position: 'RT' // 位置，可选：LT RT LB RB
-                    },
-                }]
-        };
-        this.markerPosition = this.mapParams.position;
-        this.mapHeight = document.getElementById('root').clientHeight * 0.7 + 'px';
     }
 
     componentDidMount() {
@@ -44,19 +22,22 @@ class AnYang extends React.Component {
     }
 
     render() {
-        const height = this.mapHeight;
         return (
             <div style={{ background: '#ECECEC', padding: '30px' }}>
-                <Card hoverable title='"天有玄鸟，降而生商"' bordered={false} style={{ width: 'auto' }}>
-                    <div id="anyangMap" style={{width:'auto', height:`${height}`}}>
-                        <Map amapkey={ this.mapParams.amapKey }
-                             center={ this.mapParams.position }
-                             zoom={ this.mapParams.zoom }
-                             plugins={ this.mapParams.plugins }>
-                            <Marker position={this.markerPosition}
-                                    animation="AMAP_ANIMATION_BOUNCE">
-                            </Marker>
-                        </Map>
+                <Card hoverable title='SVG(Scalable Vector Graphics)--可伸缩矢量图形' bordered={false} style={{ width: 'auto' }}>
+                    <div style={{width:'auto', height:700}}>
+                        何为矢量---既有大小又有方向的量，也称为‘向量’。矢量图可以无限放大永不变形。
+                        <svg xmlns="http://www.w3.org/2000/svg" width='100%' height='100%'>
+                            <defs>
+                                <linearGradient id="fade">
+                                    <stop offset='0%' stopColor="#008"></stop>
+                                    <stop offset='100%' stopColor="#ccf"></stop>
+                                </linearGradient>
+                            </defs>
+                            <Tooltip placement="top" title={text}>
+                                <rect id="shapeRect" x='10' y='10' width='20%' height='20%' stroke="black" strokeWidth='5' strokeLinejoin="round" strokeDasharray="10 3" fill="url(#fade)"></rect>
+                            </Tooltip>
+                        </svg>
                     </div>
                 </Card>
             </div>
@@ -64,4 +45,4 @@ class AnYang extends React.Component {
     }
 }
 
-export default AnYang;
+export default SVGDemo;

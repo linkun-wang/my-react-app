@@ -4,7 +4,7 @@ import LeftMenu from './page/LeftMenu';
 import Overview from './page/Overview';
 import GitHubStars from './page/GitHubInfo';
 import Footprint from './page/Footprint';
-import AnYang from './page/AnYang';
+import SVGDemo from './page/LearnSVG';
 import LuoYang from './page/LuoYang';
 import ShangHai from './page/ShangHai';
 import HangZhou from './page/HangZhou';
@@ -17,7 +17,7 @@ export const ContentRoute = () =>
         <Route exact path="/" component={ Overview }/>
         <Route exact path="/stars-info" component={ GitHubStars }/>
         <Route exact path="/footprint" component={ Footprint }/>
-        <Route exact path="/anYang" component={ AnYang }/>
+        <Route exact path="/learnSVG" component={ SVGDemo }/>
         <Route exact path="/luoYang" component={ LuoYang }/>
         <Route exact path="/shangHai" component={ ShangHai }/>
         <Route exact path="/hangZhou" component={ HangZhou }/>

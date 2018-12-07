@@ -68,11 +68,13 @@
 }
 
 .content-max{
+    height: 100%;
     padding: 0 10px 10px 210px;
     transition: padding 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .content-normal{
+    height: 100%;
     padding: 0 10px 10px 90px;
 }
 
@@ -92,7 +94,7 @@
     background-color: #fafafa;
     text-align: center;
     width: auto;
-    height: 75%;
+    height: 80%;
 }
 
 .steps-action {
@@ -126,11 +128,13 @@
     position: absolute;
     top: 25%;
     left: 43.5%;
-    font-size: 2.5em;
-    font-family: STXingkai;
-    font-weight: 900;
+    font-size: 2vw;
+    font-weight: bold;
 }
-
+.left70 {
+    left: 70% !important;
+    top: 20% !important;
+}
 .amap-logo, .amap-copyright {
     display: none !important;
 }

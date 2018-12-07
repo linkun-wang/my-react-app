@@ -39,7 +39,7 @@ class App extends Component {
                               onClick={this.toggle}/>
                     </Sider>
                     <Layout className={this.state.collapsed ? 'content-normal' : 'content-max'} >
-                        <Content style={{ margin: 0, height:'100%' }}>
+                        <Content style={{ margin: 0, overflow: 'auto', height:'100%' }}>
                            <ContentRoute />
                         </Content>
                         <Footer style={{ textAlign: 'center', position:'fixed', bottom:0, left:left }}>

@@ -23,7 +23,6 @@ class App extends Component {
     };
 
     render() {
-        let left = this.state.collapsed ? '35%' : '40%';
         return (
             <div style={{height: '100%'}}>
                 <header className="App-header">
@@ -42,7 +41,7 @@ class App extends Component {
                         <Content style={{ margin: 0, overflow: 'auto', height:'100%' }}>
                            <ContentRoute />
                         </Content>
-                        <Footer style={{ textAlign: 'center', position:'fixed', bottom:0, left:left }}>
+                        <Footer style={{ textAlign: 'center' }}>
                             Fork me on the <a target="_Blank" href="https://github.com/linkun-wang/my-app"><img src={ GitHubLog } className="GitHub-logo"/>GitHub</a>, created by linKun @2018, currently under learning...
                         </Footer>
                     </Layout>

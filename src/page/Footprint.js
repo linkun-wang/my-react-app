@@ -73,6 +73,7 @@ class Footprint extends React.Component {
             typeSpeed: 120,
             backSpeed: 120
         };
+        this.infoPosition = 'typer-div';
     }
 
     next() {
@@ -80,6 +81,7 @@ class Footprint extends React.Component {
             this.mapInstance.setZoom(this.mapParams.zoom)
         }
         const current = this.state.current + 1;
+        this.infoPosition = current === 3 ? 'typer-div left70':'typer-div';
         const center = steps[current].position;
         let path = this.state.path.concat([center]); // 此处不能用push方法，push方法只是修改数据状态，并不会返回一个新的数组
         this.setState({ current, center, path },(()=>{
@@ -94,6 +96,7 @@ class Footprint extends React.Component {
             this.mapInstance.setZoom(this.mapParams.zoom)
         }
         const current = this.state.current - 1;
+        this.infoPosition = current === 3 ? 'typer-div left70':'typer-div';
         const center = steps[current].position;
         let path = this.state.path.slice(0,this.state.current);
         this.setState({ current, center, path },(()=>{
@@ -118,7 +121,7 @@ class Footprint extends React.Component {
     render() {
         const { current, center, path } = this.state;
         return (
-            <div style={{ background: '#ffffff', padding: '30px', height: '100%' }}>
+            <div style={{ background: '#ffffff', padding: '30px', height:'100%' }}>
                 <Steps current={ current }>
                     {steps.map(item => <Step key={item.title} title={item.title} description={item.info} icon={<MyIcon type={item.icon} />}/>)}
                 </Steps>
@@ -133,8 +136,8 @@ class Footprint extends React.Component {
                         </Marker>
                         <Polyline path={ path } showDir="true"/>
                     </Map>
-                    <div className="typer-div">
-                        <span style={{ whiteSpace: 'pre', fontFamily: 'yuweif16243dc8601eba6' }} ref={(el) => { this.el = el; }}/>
+                    <div className={ this.infoPosition } >
+                        <span style={{ whiteSpace: 'pre', fontFamily:'yuweif16243dc8601eba6' }} ref={(el) => { this.el = el; }}/>
                     </div>
                 </div>
                 <div className="steps-action">

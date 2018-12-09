@@ -33,7 +33,7 @@ export default class LeftMenu extends Component {
                             <Menu.Item key="/footprint"><Link to="/footprint" replace>足迹</Link></Menu.Item>
                         </MenuItemGroup>
                         <MenuItemGroup key="g2" title="Notes">
-                            <Menu.Item key="/anYang"><Link to="/learnSVG">SVG学习</Link></Menu.Item>
+                            <Menu.Item key="/learnSVG"><Link to="/learnSVG">SVG学习</Link></Menu.Item>
                             <Menu.Item key="/luoYang"><Link to="/luoYang">洛阳</Link></Menu.Item>
                             <Menu.Item key="/shangHai"><Link to="/shangHai">上海</Link></Menu.Item>
                             <Menu.Item key="/hangZhou"><Link to="/hangZhou">杭州</Link></Menu.Item>

@@ -130,6 +130,7 @@ class SVGDemo extends React.Component {
         this.pieChart([10,20,20,50,2],"100%","100%",100,75,75,
             ['red','blue','gray','yellow','green'],
             ['个人花销','基本开销','房租','房贷','出行'],220,20);
+        this.updateTime();
         this.intervalID = setInterval(()=>{
             this.updateTime()
         },1000);

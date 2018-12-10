@@ -157,13 +157,16 @@
     url('//at.alicdn.com/t/webfont_a35jl8d0gjr.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
 }
 
+/*css for svg-clock*/
 #clock {
     stroke: #ad223c;
     stroke-linecap: round;
     fill: #f2fddb;
+    transition: 1s all ease;
 }
 #clock:hover {
     stroke: #adcd3c;
+    transition: 1s all ease;
 }
 #face {
     stroke-width: 3px;

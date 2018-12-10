@@ -156,3 +156,28 @@
     url('//at.alicdn.com/t/webfont_a35jl8d0gjr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('//at.alicdn.com/t/webfont_a35jl8d0gjr.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
 }
+
+#clock {
+    stroke: #ad223c;
+    stroke-linecap: round;
+    fill: #f2fddb;
+}
+#clock:hover {
+    stroke: #adcd3c;
+}
+#face {
+    stroke-width: 3px;
+}
+#ticks {
+    stroke-width: 2px;
+}
+#hands line {
+    stroke-linejoin: bevel;
+}
+#numbers {
+    font-size: 12px;
+    text-anchor: middle;
+    stroke: none;
+    fill:  #92b0dd;
+}
+

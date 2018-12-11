@@ -6,6 +6,12 @@ const gridStyle = {
     width: '25%',
     textAlign: 'center'
 };
+const text = '--\<canvas>是可以用JS脚本绘制图像的HTML元素，它提供了一张固定大小的画布，并公开了一个或多个渲染上下文，可以用来绘制和处理要展示的内容';
+const title =
+    <div>
+        <span>Canvas</span>
+        <span style={{ fontSize:'smaller', color:'#c0c0c0' }}>{ text }</span>
+    </div>;
 class CanvasDemo extends React.Component {
     constructor(props) {
         super(props);
@@ -53,13 +59,14 @@ class CanvasDemo extends React.Component {
     }
 
     render() {
+        console.log(title);
         return (
             <div style={{ background: '#ECECEC', padding: '30px', height:'100%' }}>
-                <Card hoverable title='Canvas--<canvas>是可以用JS脚本绘制图像的HTML元素，它提供了一张固定大小的画布，并公开了一个或多个渲染上下文，可以用来绘制和处理要展示的内容。'
+                <Card hoverable title={ title }
                       bordered={false} style={{ width:'auto', height:'100%' }}>
-                    <Card.Grid style={gridStyle}>
+                    <Card.Grid style={{ width:'25%', padding:'15px' }}>
                         <canvas id="demo1" width='100%' height='100%'></canvas>
-                        <canvas id="demo2" width='120' height='100'></canvas>
+                        <canvas id="demo2" width='110%' height='100%'></canvas>
                     </Card.Grid>
                     <Card.Grid style={gridStyle}>
                         <canvas id="demo3" width='150' height='100%'></canvas>

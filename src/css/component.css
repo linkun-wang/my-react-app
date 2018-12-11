@@ -162,11 +162,10 @@
     stroke: #ad223c;
     stroke-linecap: round;
     fill: #f2fddb;
-    transition: 1s all ease;
+    transition: stroke 1s ease;
 }
 #clock:hover {
     stroke: #adcd3c;
-    transition: 1s all ease;
 }
 #face {
     stroke-width: 3px;

@@ -1,10 +1,10 @@
 {
-  "main.css": "/my-app/static/css/main.feefdb42.chunk.css",
-  "main.js": "/my-app/static/js/main.8e0fe78a.chunk.js",
-  "main.js.map": "/my-app/static/js/main.8e0fe78a.chunk.js.map",
+  "main.css": "/my-app/static/css/main.30c16280.chunk.css",
+  "main.js": "/my-app/static/js/main.fb2cee8e.chunk.js",
+  "main.js.map": "/my-app/static/js/main.fb2cee8e.chunk.js.map",
   "static/css/1.ce87ce88.chunk.css": "/my-app/static/css/1.ce87ce88.chunk.css",
-  "static/js/1.38ee0fd7.chunk.js": "/my-app/static/js/1.38ee0fd7.chunk.js",
-  "static/js/1.38ee0fd7.chunk.js.map": "/my-app/static/js/1.38ee0fd7.chunk.js.map",
+  "static/js/1.36f58e46.chunk.js": "/my-app/static/js/1.36f58e46.chunk.js",
+  "static/js/1.36f58e46.chunk.js.map": "/my-app/static/js/1.36f58e46.chunk.js.map",
   "runtime~main.js": "/my-app/static/js/runtime~main.a3bd857c.js",
   "runtime~main.js.map": "/my-app/static/js/runtime~main.a3bd857c.js.map",
   "static/media/logo.svg": "/my-app/static/media/logo.5d5d9eef.svg",
@@ -12,9 +12,9 @@
   "static/media/Leon.jpeg": "/my-app/static/media/Leon.55b54ea5.jpeg",
   "static/media/Totoro.gif": "/my-app/static/media/Totoro.c49920df.gif",
   "static/media/weightlifting.gif": "/my-app/static/media/weightlifting.012aee4e.gif",
-  "static/css/main.feefdb42.chunk.css.map": "/my-app/static/css/main.feefdb42.chunk.css.map",
+  "static/css/main.30c16280.chunk.css.map": "/my-app/static/css/main.30c16280.chunk.css.map",
   "static/css/1.ce87ce88.chunk.css.map": "/my-app/static/css/1.ce87ce88.chunk.css.map",
   "index.html": "/my-app/index.html",
-  "precache-manifest.0f4abbec05e2149db5a878eb2db5ecae.js": "/my-app/precache-manifest.0f4abbec05e2149db5a878eb2db5ecae.js",
+  "precache-manifest.986b71edfff434cc78b3fb42102446bf.js": "/my-app/precache-manifest.986b71edfff434cc78b3fb42102446bf.js",
   "service-worker.js": "/my-app/service-worker.js"
 }

@@ -162,7 +162,7 @@ class CanvasDemo extends React.Component {
                     <Card.Grid style={{ textAlign:'center', width:'45%' }}>
                         <canvas id="demo4" width='500' height='100'></canvas>
                     </Card.Grid>
-                    <Card.Grid style={{ textAlign:'left', width:'25%' }}>
+                    <Card.Grid style={{ textAlign:'left', width:'35%' }}>
                         <canvas id="demo5" width='110' height='110'></canvas>
                         <canvas id="demo6" width='200' height='120'></canvas>
                     </Card.Grid>

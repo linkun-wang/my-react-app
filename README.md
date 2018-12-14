@@ -86,7 +86,7 @@
 > * canvas.restore()用来恢复之前保存的状态   
     调用restore()方法会从栈中回复**最近一次**保存的状态
 > * 堆==>先进先出；栈==>先进后出：      
-![Stack](./src/images/stack.PNG "堆-栈")       
+![Stack](https://github.com/linkun-wang/my-app/blob/master/src/images/stack.png "堆-栈")       
 
 ----
 
@@ -99,7 +99,7 @@
 
 ##### 奇-偶规则（Odd-even Rule）
 > * 从任意点P作一条射线，若与该射线相交的多边形边数为奇数，则P点在该多边形内部；反之若为偶数，则说明P点在该多边形外部。如下图：    
-![Odd-even Rule](./src/images/Odd-even-Rule.PNG "奇-偶规则")
+![Odd-even Rule](https://github.com/linkun-wang/my-app/blob/master/src/images/Odd-even-Rule.png "奇-偶规则")
 
 ---
 
@@ -108,6 +108,6 @@
     S2中引出的射线L2，与两条子路径的正方向相交，计数器+2，结果为+2，在里面。  
     S3中引出的射线L3，与两条子路径相交，但是其中有一条的反方向，计数器+1-1，结果为0，外面。  
     即：非零在内，零在外   
-![Non-Zero Winding Number](./src/images/Non-Zero-Winding-Number.PNG "非零绕数原则")
+![Non-Zero Winding Number](https://github.com/linkun-wang/my-app/blob/master/src/images/Non-Zero-Winding-Number.png "非零绕数原则")
 
 ---

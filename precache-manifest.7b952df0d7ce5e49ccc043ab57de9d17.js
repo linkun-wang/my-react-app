@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "c42a5b76b2cb1d343332",
+    "revision": "612e04f6c586e4954419",
     "url": "/my-app/static/css/main.30c16280.chunk.css"
   },
   {
-    "revision": "c42a5b76b2cb1d343332",
-    "url": "/my-app/static/js/main.c42a5b76.chunk.js"
+    "revision": "612e04f6c586e4954419",
+    "url": "/my-app/static/js/main.612e04f6.chunk.js"
   },
   {
-    "revision": "36f58e46e3da4833b651",
+    "revision": "9aa9fd7cccdf13458b5e",
     "url": "/my-app/static/css/1.ce87ce88.chunk.css"
   },
   {
-    "revision": "36f58e46e3da4833b651",
-    "url": "/my-app/static/js/1.36f58e46.chunk.js"
+    "revision": "9aa9fd7cccdf13458b5e",
+    "url": "/my-app/static/js/1.9aa9fd7c.chunk.js"
   },
   {
     "revision": "a3bd857c0333674b1d75",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/weightlifting.012aee4e.gif"
   },
   {
-    "revision": "7f5e4b3ad9016839829ff88c45e90ec2",
+    "revision": "00e126cddfa617e373b63b95ddb18073",
     "url": "/my-app/index.html"
   }
 ];

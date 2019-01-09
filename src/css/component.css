@@ -123,13 +123,23 @@
     -webkit-animation: 0;
     animation: 0;
 }
-
+@font-face {
+    font-family: 'hyxuejunfregular';
+    src:
+        url('./font/汉仪雪君体繁.eot?#font-spider') format('embedded-opentype'),
+        url('./font/汉仪雪君体繁.woff') format('woff'),
+        url('./font/汉仪雪君体繁.ttf') format('truetype'),
+        url('./font/汉仪雪君体繁.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 .typer-div {
     position: absolute;
     top: 25%;
     left: 43.5%;
     font-size: 2vw;
     font-weight: bold;
+    font-family: 'hyxuejunfregular';
 }
 .left70 {
     left: 70% !important;

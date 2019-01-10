@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "dc0a6c8ff63023c24358",
+    "revision": "7fef061977463f664ac9",
     "url": "/my-app/static/css/main.4b8f1b88.chunk.css"
   },
   {
-    "revision": "dc0a6c8ff63023c24358",
-    "url": "/my-app/static/js/main.dc0a6c8f.chunk.js"
+    "revision": "7fef061977463f664ac9",
+    "url": "/my-app/static/js/main.7fef0619.chunk.js"
   },
   {
     "revision": "9aa9fd7cccdf13458b5e",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/汉仪雪君体繁.5af3b582.svg"
   },
   {
-    "revision": "f4726ebac197e467404b210992c7bf6e",
+    "revision": "4ec1fe6c1319177c1d60711eee8d650d",
     "url": "/my-app/index.html"
   }
 ];

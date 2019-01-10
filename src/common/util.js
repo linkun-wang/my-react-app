@@ -1,6 +1,8 @@
 class Util {
     constant = {
-        GITHUB_TOKEN: '',
+        // 如果直接把token写在项目里然后保存在github上，此token就会被删除，所以一分为二
+        GITHUB_TOKEN: '0e0d30856be8df18ce',
+        GITHUB_TOKEN_2: '5076f6ebdbd8fa275bbf91',
         MAP_KEY: 'caccd696b2aef003ebbf0cfc9167dce5'
     };
 

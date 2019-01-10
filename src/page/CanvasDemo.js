@@ -17,6 +17,8 @@ class CanvasDemo extends React.Component {
     componentDidMount() {
         // 基础绘制矩形，圆形
         let canvas = document.getElementById('demo1');
+        canvas.width = 0.073 * window.screen.availWidth;
+        canvas.height = 0.135 * window.screen.availHeight;
         let c = canvas.getContext('2d');
         this.basicDraw(c);
 
@@ -40,6 +42,8 @@ class CanvasDemo extends React.Component {
         c.fillStyle = '#f00';
         c.fillRect(0,0,100,100);
         let canvas = document.getElementById('demo2');
+        canvas.width = 0.083 * window.screen.availWidth;
+        canvas.height = 0.135 * window.screen.availHeight;
         c = canvas.getContext('2d');
         c.beginPath();
         /**
@@ -153,8 +157,8 @@ class CanvasDemo extends React.Component {
                 <Card hoverable title={ title }
                       bordered={false} style={{ width:'100%', height:'100%' }}>
                     <Card.Grid style={{ textAlign:'center', width:'25%' }}>
-                        <canvas id="demo1" width='100' height='100'></canvas>
-                        <canvas id="demo2" width='110' height='100'></canvas>
+                        <canvas id="demo1"></canvas>
+                        <canvas id="demo2"></canvas>
                     </Card.Grid>
                     <Card.Grid style={{ textAlign:'center', width:'15%' }}>
                         <canvas id="demo3" width='100' height='100'></canvas>

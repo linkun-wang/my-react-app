@@ -4,7 +4,7 @@ import Util from '../common/util';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const LIMIT = 7;
-const TOKEN = 'c49181707b1716005152e834ccad11844bd2c8f6';
+const TOKEN = 'befb624d9211a010532bf052a7a29b7ed2347763';
 let gitHubInfo = [], link, total, _this;
 
 class StarsInfo extends React.Component {
@@ -97,7 +97,11 @@ class StarsInfo extends React.Component {
     fetchData(param) {
         this.setState({ loading: true });
         let url = `https://api.github.com/users/linkun-wang/starred?per_page=${param.pageSize}&page=${param.current}`;
-        fetch(url).then( resp => {
+        fetch(url,{
+            headers: {
+                'Authorization': `token ${TOKEN}`,
+            }
+        }).then( resp => {
             if (resp.status === 200) {
                 link = resp.headers.get('link');
                 total = this.getTotal(link);

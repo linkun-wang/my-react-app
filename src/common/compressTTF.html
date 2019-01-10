@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- font-spider只能识别.html文件，所以创建此文件
+     若项目中所需格式化汉字增加，则添加至此处，然后运行命令: font-spider --debug *.html
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>compress ttf</title>
+    <style>
+        @font-face {
+            font-family: 'hyxuejunfregular';
+            src: url('../css/font/汉仪雪君体繁.eot');
+            src:
+                    url('../css/font/汉仪雪君体繁.eot?#font-spider') format('embedded-opentype'),
+                    url('../css/font/汉仪雪君体繁.woff') format('woff'),
+                    url('../css/font/汉仪雪君体繁.ttf') format('truetype'),
+                    url('../css/font/汉仪雪君体繁.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        .testAA {
+            font-family: 'hyxuejunfregular';
+        }
+    </style>
+</head>
+<body>
+ <div class="testAA">
+     天命玄鸟，降而生商;
+     "欲知古今兴废事，请君只看洛阳城";
+     "年前回上海来，对于久违了的上海人的第一个印象是白与胖"
+     江南忆,最忆是杭州哈哈哈哈哈
+ </div>
+</body>
+</html>

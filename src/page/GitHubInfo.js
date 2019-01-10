@@ -4,7 +4,7 @@ import Util from '../common/util';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const LIMIT = 7;
-const TOKEN = 'de03ab2938d928c91ce9043a15a4241c28243496';
+const TOKEN = 'befb624d9211a010532bf052a7a29b7ed2347763';
 let gitHubInfo = [], link, total, _this;
 
 class StarsInfo extends React.Component {

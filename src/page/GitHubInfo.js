@@ -1,11 +1,10 @@
 import React from 'react';
 import { Card, Table, message, notification } from 'antd';
 import Util from '../common/util';
+import Ajax from '../common/ajax';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-const LIMIT = 7;
-const TOKEN = Util.constant.GITHUB_TOKEN + Util.constant.GITHUB_TOKEN_2;
-let gitHubInfo = [], link, total, _this;
+let gitHubInfo = [], _this;
 
 class StarsInfo extends React.Component {
     constructor(props) {
@@ -51,7 +50,7 @@ class StarsInfo extends React.Component {
         ];
         this.pagination = {
             total: 0,
-            pageSize: LIMIT,
+            pageSize: Util.constant.LIMIT,
             current: 1
         };
         _this = this;
@@ -80,42 +79,20 @@ class StarsInfo extends React.Component {
         }
     }
 
-    getTotal = (link) => {
-        let totalPages = 0;
-        let str = link.split(',').find(s => s.indexOf('rel="last"') > -1);
-        if(str) {
-            totalPages = Util.getQueryString(str.split(';')[0].slice(1, -1), 'page');
-        } else {
-            str = link.split(',').find(s => s.indexOf('rel="prev"') > -1);
-            if(str) {
-                totalPages = Util.getQueryString(str.split(';')[0].slice(1, -1), 'page') * 1 + 1;
-            }
-        }
-        return totalPages * LIMIT
-    };
-
     fetchData(param) {
         this.setState({ loading: true });
-        let url = `https://api.github.com/users/linkun-wang/starred?per_page=${param.pageSize}&page=${param.current}`;
-        fetch(url,{
-            headers: {
-                'Authorization': `token ${TOKEN}`,
-            }
-        }).then( resp => {
-            if (resp.status === 200) {
-                link = resp.headers.get('link');
-                total = this.getTotal(link);
-                this.pagination.total = total;
-                return resp.json()
-            } else {
-                return new Promise((resolve,reject) => {
-                    reject({status:resp.status, message:resp.statusText});
-                })
-            }
-        }).then((data) => {
-            if (data.length) {
+
+        let issueUrl = Util.URL.get_issues;
+        Ajax.get(issueUrl).then( resp => {
+            console.log(resp);
+        });
+
+        let url = Util.URL.get_starred;
+        Ajax.get(url, { per_page:param.pageSize,page:param.current }).then((resp) => {
+            this.pagination.total = resp.total;
+            if (resp.data.length) {
                 gitHubInfo = [];
-                data.forEach((project,index)=>{
+                resp.data.forEach((project,index)=>{
                     gitHubInfo.push({
                         key: index,
                         home: project.html_url,
@@ -138,8 +115,8 @@ class StarsInfo extends React.Component {
             }
         }).catch(error => {
             notification['error']({
-                message: error.message,
-                description: error.status === 403 ? 'API rate limit exceeded for 116.66.184.191. (But here\'s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)' : Util.formatErrorMsg(error),
+                message: error.status,
+                description: Util.formatErrorMsg(error),
             });
             this.setState({
                 loading: false,

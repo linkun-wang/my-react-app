@@ -16,7 +16,7 @@
     "react-scripts": "2.1.1",
     "react-amap": "^1.2.7",
     "whatwg-fetch": "^2.0.3",
-    "antd": "^3.10.9",
+    "antd": "^3.13.0",
     "typed.js": "^2.0.9",
     "yarn": "^1.12.3"
   },

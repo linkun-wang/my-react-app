@@ -1,10 +1,13 @@
 import React from 'react';
-import { Card, Table, message, notification } from 'antd';
+import { ConfigProvider, Empty, Card, Table, message, notification } from 'antd';
 import Util from '../common/util';
 import Ajax from '../common/ajax';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 let gitHubInfo = [], _this;
+const customizeRenderEmpty = () => (
+    <Empty description="暂无数据"/>
+)
 
 class StarsInfo extends React.Component {
     constructor(props) {
@@ -51,7 +54,8 @@ class StarsInfo extends React.Component {
         this.pagination = {
             total: 0,
             pageSize: Util.constant.LIMIT,
-            current: 1
+            current: 1,
+            showTotal: total => `Total ${total}`
         };
         _this = this;
     }
@@ -126,16 +130,21 @@ class StarsInfo extends React.Component {
     }
 
     render() {
+        let noData = this.state.gitHubInfo.length === 0;
         return (
             <div style={{ background: '#ECECEC', padding: '30px' }}>
                 <Card hoverable title="GitHub-linkun-wang收藏项目（异步）" bordered={false} style={{ width: 'auto' }}>
-                    <Table
-                        columns={this.columns}
-                        dataSource={this.state.gitHubInfo}
-                        loading={this.state.loading}
-                        pagination={this.pagination}
-                        onChange={this.handleTableChange.bind(this)}
-                        scroll={{ x: 1650, y: 525 }} />
+                    <ConfigProvider renderEmpty={ noData && customizeRenderEmpty }>
+                        <div className="config-provider">
+                            <Table
+                                columns={this.columns}
+                                dataSource={this.state.gitHubInfo}
+                                loading={this.state.loading}
+                                pagination={this.pagination}
+                                onChange={this.handleTableChange.bind(this)}
+                                scroll={{ x: 1650, y: 525 }} />
+                        </div>
+                    </ConfigProvider>
                 </Card>
             </div>
         )

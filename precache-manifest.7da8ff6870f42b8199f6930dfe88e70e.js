@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "5c9f4a21b4f3b2879f21",
-    "url": "/my-app/static/css/main.4b8f1b88.chunk.css"
+    "revision": "46f05db7246564af7f0f",
+    "url": "/my-app/static/css/main.1637bde7.chunk.css"
   },
   {
-    "revision": "5c9f4a21b4f3b2879f21",
-    "url": "/my-app/static/js/main.5c9f4a21.chunk.js"
+    "revision": "46f05db7246564af7f0f",
+    "url": "/my-app/static/js/main.46f05db7.chunk.js"
   },
   {
-    "revision": "9aa9fd7cccdf13458b5e",
-    "url": "/my-app/static/css/1.ce87ce88.chunk.css"
+    "revision": "b08cb8b5c4bb5b7e184d",
+    "url": "/my-app/static/css/1.07ea33fd.chunk.css"
   },
   {
-    "revision": "9aa9fd7cccdf13458b5e",
-    "url": "/my-app/static/js/1.9aa9fd7c.chunk.js"
+    "revision": "b08cb8b5c4bb5b7e184d",
+    "url": "/my-app/static/js/1.b08cb8b5.chunk.js"
   },
   {
     "revision": "a3bd857c0333674b1d75",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/汉仪雪君体繁.5af3b582.svg"
   },
   {
-    "revision": "20f71a5f964d388e1d281575f7140ff1",
+    "revision": "b5691aeb440e87f59155293f83a24aa2",
     "url": "/my-app/index.html"
   }
 ];

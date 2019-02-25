@@ -156,17 +156,17 @@ class CanvasDemo extends React.Component {
             <div style={{ background: '#ECECEC', padding: '30px', width:'100%', height:'100%' }}>
                 <Card hoverable title={ title }
                       bordered={false} style={{ width:'100%', height:'100%' }}>
-                    <Card.Grid style={{ textAlign:'center', width:'25%' }}>
+                    <Card.Grid style={{ textAlign:'center', width:'25%', overflow:'auto' }}>
                         <canvas id="demo1"></canvas>
                         <canvas id="demo2"></canvas>
                     </Card.Grid>
-                    <Card.Grid style={{ textAlign:'center', width:'15%' }}>
+                    <Card.Grid style={{ textAlign:'center', width:'15%', overflow:'auto' }}>
                         <canvas id="demo3" width='100' height='100'></canvas>
                     </Card.Grid>
-                    <Card.Grid style={{ textAlign:'center', width:'45%' }}>
+                    <Card.Grid style={{ textAlign:'center', width:'45%', overflow:'auto' }}>
                         <canvas id="demo4" width='500' height='100'></canvas>
                     </Card.Grid>
-                    <Card.Grid style={{ textAlign:'left', width:'35%' }}>
+                    <Card.Grid style={{ textAlign:'left', width:'35%', overflow:'auto' }}>
                         <canvas id="demo5" width='110' height='110'></canvas>
                         <canvas id="demo6" width='200' height='120'></canvas>
                     </Card.Grid>

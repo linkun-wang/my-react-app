@@ -22,7 +22,7 @@ const steps = [
     },{
         title:'上海', icon:'icon-shanghai3',
         info:'【东经121，北纬31】',
-        desc:'"年前回上海来，\n对于久违了的上海人的第一个印象是^300白与胖"',
+        desc:'"年前回上海来，\n对于久违了的上海人的第一个印象是^300\n白与胖"',
         position: { longitude: 121.473658, latitude: 31.230378 }
     },{
         title:'杭州', icon:'icon-hangzhou',

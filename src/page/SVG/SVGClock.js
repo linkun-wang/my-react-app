@@ -44,7 +44,7 @@ export default class SVGClock extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{overflow:'auto'}}>
                 <Tooltip placement="top" title={ current }>
                     {/*viewBox是坐标系，width和height是指屏幕大小*/}
                     <svg id="clock" viewBox="0 0 100 100" width="150" height="150">

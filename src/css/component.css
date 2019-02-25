@@ -136,7 +136,7 @@
 }
 .typer-div {
     position: absolute;
-    top: calc(100% - 50vh);
+    top: 10%;
     left: calc(100% - 53vw);
     font-size: 2vw;
     font-weight: bold;
@@ -193,3 +193,24 @@
     fill:  #92b0dd;
 }
 
+/*呼吸动效*/
+.double-bounce1 {
+    background: #3eaeff;
+    width: 65%;
+    height: 65%;
+    top: 17%;
+    left: 18%;
+}
+.double-bounce2 {
+    background: rgba(73,157,242,.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation-delay: 3.8s;
+}
+.double-bounce1, .double-bounce2 {
+    border-radius: 50%;
+    position: absolute;
+    animation: db 3.5s infinite cubic-bezier(.4,0,.2,1);
+}

@@ -1,7 +1,7 @@
 {
-  "main.css": "/my-app/static/css/main.1637bde7.chunk.css",
-  "main.js": "/my-app/static/js/main.46f05db7.chunk.js",
-  "main.js.map": "/my-app/static/js/main.46f05db7.chunk.js.map",
+  "main.css": "/my-app/static/css/main.5699b0a1.chunk.css",
+  "main.js": "/my-app/static/js/main.12af5e5d.chunk.js",
+  "main.js.map": "/my-app/static/js/main.12af5e5d.chunk.js.map",
   "static/css/1.07ea33fd.chunk.css": "/my-app/static/css/1.07ea33fd.chunk.css",
   "static/js/1.b08cb8b5.chunk.js": "/my-app/static/js/1.b08cb8b5.chunk.js",
   "static/js/1.b08cb8b5.chunk.js.map": "/my-app/static/js/1.b08cb8b5.chunk.js.map",
@@ -13,9 +13,9 @@
   "static/media/Totoro.gif": "/my-app/static/media/Totoro.c49920df.gif",
   "static/media/weightlifting.gif": "/my-app/static/media/weightlifting.012aee4e.gif",
   "static/media/App.css": "/my-app/static/media/汉仪雪君体繁.5af3b582.svg",
-  "static/css/main.1637bde7.chunk.css.map": "/my-app/static/css/main.1637bde7.chunk.css.map",
+  "static/css/main.5699b0a1.chunk.css.map": "/my-app/static/css/main.5699b0a1.chunk.css.map",
   "static/css/1.07ea33fd.chunk.css.map": "/my-app/static/css/1.07ea33fd.chunk.css.map",
   "index.html": "/my-app/index.html",
-  "precache-manifest.7da8ff6870f42b8199f6930dfe88e70e.js": "/my-app/precache-manifest.7da8ff6870f42b8199f6930dfe88e70e.js",
+  "precache-manifest.e06c220178b40e2fbf2f226c803d11e9.js": "/my-app/precache-manifest.e06c220178b40e2fbf2f226c803d11e9.js",
   "service-worker.js": "/my-app/service-worker.js"
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "12af5e5d8031035b73bd",
+    "revision": "70b0e48cd3663e62dbf3",
     "url": "/my-app/static/css/main.5699b0a1.chunk.css"
   },
   {
-    "revision": "12af5e5d8031035b73bd",
-    "url": "/my-app/static/js/main.12af5e5d.chunk.js"
+    "revision": "70b0e48cd3663e62dbf3",
+    "url": "/my-app/static/js/main.70b0e48c.chunk.js"
   },
   {
     "revision": "b08cb8b5c4bb5b7e184d",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/weightlifting.012aee4e.gif"
   },
   {
-    "revision": "2a15844d51f959bb2017a551524a3c94",
-    "url": "/my-app/static/media/汉仪雪君体繁.2a15844d.woff"
-  },
-  {
     "revision": "0b225eaad62f9fe65be6f6077f6a8ee7",
     "url": "/my-app/static/media/汉仪雪君体繁.0b225eaa.eot"
+  },
+  {
+    "revision": "2a15844d51f959bb2017a551524a3c94",
+    "url": "/my-app/static/media/汉仪雪君体繁.2a15844d.woff"
   },
   {
     "revision": "cb2dce8c7d9aebe86106a936099141b8",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/汉仪雪君体繁.5af3b582.svg"
   },
   {
-    "revision": "5893ce29dc1127f76000d704ae04ba82",
+    "revision": "ae04bb47b3153b66f62c07cbae68ec8b",
     "url": "/my-app/index.html"
   }
 ];

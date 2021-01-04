@@ -33,7 +33,7 @@
 ##### 4、项目打包
         $ npm run build
         
-##### 5、项目部署至github-page(https://linkun-wang.github.io/my-app/)
+##### 5、项目部署至github-page(https://linkun-wang.github.io/my-react-app/)
         $ yarn run deploy
 	
 --------------------------------------------------

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Steps, Icon, Button, message } from 'antd';
+import { Steps, Icon, Button, message } from 'antd';
 import { Map, Marker, Polyline } from 'react-amap';
 import Util from '../common/util';
 import Typed from 'typed.js';

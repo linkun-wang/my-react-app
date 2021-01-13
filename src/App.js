@@ -42,7 +42,7 @@ class App extends Component {
                            <ContentRoute />
                         </Content>
                         <Footer style={{ textAlign: 'center' }}>
-                            Fork me on the <a target="_Blank" href="https://github.com/linkun-wang/my-app"><img src={ GitHubLog } className="GitHub-logo"/>GitHub</a>, created by linKun @2018, currently under learning...
+                            Fork me on the <a target="_Blank" rel="noopener noreferrer" href="https://github.com/linkun-wang/my-app"><img src={ GitHubLog } className="GitHub-logo"/>GitHub</a>, created by linKun @2018, currently under learning...
                         </Footer>
                     </Layout>
                 </Layout>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, Table, message, notification, Tooltip, Row, Col } from 'antd';
-import { Map, Marker } from 'react-amap';
+import { Card, Tooltip, Row, Col } from 'antd';
 import SVGClock from './SVGClock';
 import SVGPieChart from './SVGPieChart';
 

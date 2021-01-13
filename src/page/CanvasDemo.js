@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'antd';
 
-const text = '--\<canvas>是可以用JS脚本绘制图像的HTML元素，它提供了一张固定大小的画布，并公开了一个或多个渲染上下文，可以用来绘制和处理要展示的内容';
+const text = '--<canvas>是可以用JS脚本绘制图像的HTML元素，它提供了一张固定大小的画布，并公开了一个或多个渲染上下文，可以用来绘制和处理要展示的内容';
 const title =
     <div>
         <span>Canvas</span>

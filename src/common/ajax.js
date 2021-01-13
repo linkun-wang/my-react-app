@@ -2,7 +2,6 @@ import Util from './util';
 
 let ajaxQueue = {};
 let total = 0, link = undefined;
-const TOKEN = Util.constant.GITHUB_TOKEN + Util.constant.GITHUB_TOKEN_2;
 const LIMIT = Util.constant.LIMIT;
 
 class Ajax {
@@ -57,7 +56,7 @@ class Ajax {
         ajaxQueue[url] = fetch(url+_param,{
             method: 'GET',
             headers: {
-                'Authorization': `token ${TOKEN}`,
+                'Authorization': 'Basic YWxmYWx...',
             }
         });
         return ajaxQueue[url].then(this.statusVerify, this.reject).then( data => {
@@ -73,7 +72,7 @@ class Ajax {
         ajaxQueue[url] = fetch(url,{
             method: 'POST',
             headers: {
-                'Authorization': `token ${TOKEN}`,
+                'Authorization': 'Basic YWxmYWx...',
             },
             body: _data
         }, timeout);
@@ -92,4 +91,4 @@ class Ajax {
     }
 
 }
-export default new Ajax;
+export default new Ajax();

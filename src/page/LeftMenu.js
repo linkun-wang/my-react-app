@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
-import { Menu, Icon, Switch, Layout } from 'antd';
+import { Menu, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
 const SubMenu = Menu.SubMenu;

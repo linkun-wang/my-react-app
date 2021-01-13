@@ -22,7 +22,6 @@ export default class SVGClock extends Component {
         let minhand = document.getElementById('minutehand');
         let hourhand = document.getElementById('hourhand');
         let secondhand = document.getElementById('secondhand');
-        let shadhand = document.getElementById("shadow");
 
         minhand.setAttribute('transform', 'rotate(' + minangle + ', 50, 50)');
         hourhand.setAttribute('transform', 'rotate(' + hourangle + ', 50, 50)');

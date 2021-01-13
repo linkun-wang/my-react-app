@@ -4,7 +4,7 @@ import Util from '../common/util';
 import Ajax from '../common/ajax';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-let gitHubInfo = [], _this;
+let gitHubInfo = [];
 const customizeRenderEmpty = () => (
     <Empty description="暂无数据"/>
 )
@@ -21,7 +21,7 @@ class StarsInfo extends React.Component {
                 sorter: (a,b) => {
                     return a.name.toLowerCase().charCodeAt(0) - b.name.toLowerCase().charCodeAt(0)
                 },
-                render: (text, row, index) => <a target="_Blank" href= {row.home}>{row.name}</a>
+                render: (text, row, index) => <a target="_Blank" rel="noopener noreferrer" href= {row.home}>{row.name}</a>
             },
             { title: '项目ID', dataIndex: 'id', key: 'id'},
             { title: '描述', dataIndex: 'desc', key: 'desc', width: 260 },
@@ -57,7 +57,6 @@ class StarsInfo extends React.Component {
             current: 1,
             showTotal: total => `Total ${total}`
         };
-        _this = this;
     }
 
     componentDidMount() {
@@ -133,7 +132,7 @@ class StarsInfo extends React.Component {
         let noData = this.state.gitHubInfo.length === 0;
         return (
             <div style={{ background: '#ECECEC', padding: '30px' }}>
-                <Card hoverable title="GitHub-linkun-wang收藏项目（异步）" bordered={false} style={{ width: 'auto' }}>
+                <Card hoverable title="GitHub-linkun-wang收藏项目" bordered={false} style={{ width: 'auto' }}>
                     <ConfigProvider renderEmpty={ noData && customizeRenderEmpty }>
                         <div className="config-provider">
                             <Table

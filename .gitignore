@@ -11,8 +11,8 @@
 # production
 /build
 
-# gitignore
-/.gitignore
+# idea
+/.idea
 
 # misc
 .DS_Store

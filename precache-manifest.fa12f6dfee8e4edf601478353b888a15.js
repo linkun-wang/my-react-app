@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "10f14441f68721d3d2fe",
+    "revision": "885721ebca20c9cce343",
     "url": "/my-react-app/static/css/main.a8187405.chunk.css"
   },
   {
-    "revision": "10f14441f68721d3d2fe",
-    "url": "/my-react-app/static/js/main.5352259a.chunk.js"
+    "revision": "885721ebca20c9cce343",
+    "url": "/my-react-app/static/js/main.9d5bf9c7.chunk.js"
   },
   {
     "revision": "b28cb091c153ab1cf392",
     "url": "/my-react-app/static/js/runtime~main.f5ab8794.js"
   },
   {
-    "revision": "297e12d79bd914256599",
+    "revision": "21886a8b48aa58b38b1a",
     "url": "/my-react-app/static/css/2.fd605723.chunk.css"
   },
   {
-    "revision": "297e12d79bd914256599",
-    "url": "/my-react-app/static/js/2.119918b1.chunk.js"
+    "revision": "21886a8b48aa58b38b1a",
+    "url": "/my-react-app/static/js/2.7869668a.chunk.js"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/my-react-app/static/media/weightlifting.012aee4e.gif"
   },
   {
-    "revision": "cb2dce8c7d9aebe86106a936099141b8",
-    "url": "/my-react-app/static/media/汉仪雪君体繁.cb2dce8c.ttf"
-  },
-  {
     "revision": "0b225eaad62f9fe65be6f6077f6a8ee7",
     "url": "/my-react-app/static/media/汉仪雪君体繁.0b225eaa.eot"
+  },
+  {
+    "revision": "cb2dce8c7d9aebe86106a936099141b8",
+    "url": "/my-react-app/static/media/汉仪雪君体繁.cb2dce8c.ttf"
   },
   {
     "revision": "2a15844d51f959bb2017a551524a3c94",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/my-react-app/static/media/汉仪雪君体繁.5af3b582.svg"
   },
   {
-    "revision": "f8a7c1f414bd23eeb0246600c7a3047f",
+    "revision": "591cf4cd60c53ffb8eca3ce47cf90e66",
     "url": "/my-react-app/index.html"
   }
 ];

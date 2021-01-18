@@ -28,7 +28,6 @@ class App extends Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <span className="left-time"><Current></Current></span>
-                    <div className="center-title">这是一个很丑很丑的网页</div>
                 </header>
                 <Layout style={{height: '95%'}}>
                     <Sider className="fixed" collapsible trigger={null} collapsed={this.state.collapsed}>

@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "885721ebca20c9cce343",
-    "url": "/my-react-app/static/css/main.a8187405.chunk.css"
+    "revision": "2942f914ce5dc33b08bd",
+    "url": "/my-react-app/static/css/main.7da8be54.chunk.css"
   },
   {
-    "revision": "885721ebca20c9cce343",
-    "url": "/my-react-app/static/js/main.9d5bf9c7.chunk.js"
+    "revision": "2942f914ce5dc33b08bd",
+    "url": "/my-react-app/static/js/main.ac8b541a.chunk.js"
   },
   {
     "revision": "b28cb091c153ab1cf392",
     "url": "/my-react-app/static/js/runtime~main.f5ab8794.js"
   },
   {
-    "revision": "21886a8b48aa58b38b1a",
+    "revision": "41f6817d407bfa7b8284",
     "url": "/my-react-app/static/css/2.fd605723.chunk.css"
   },
   {
-    "revision": "21886a8b48aa58b38b1a",
-    "url": "/my-react-app/static/js/2.7869668a.chunk.js"
+    "revision": "41f6817d407bfa7b8284",
+    "url": "/my-react-app/static/js/2.2f2137eb.chunk.js"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/my-react-app/static/media/汉仪雪君体繁.5af3b582.svg"
   },
   {
-    "revision": "591cf4cd60c53ffb8eca3ce47cf90e66",
+    "revision": "8f8ec4fb1cb2cae8d9bb939310078e9f",
     "url": "/my-react-app/index.html"
   }
 ];

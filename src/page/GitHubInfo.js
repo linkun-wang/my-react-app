@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConfigProvider, Empty, Card, Table, message, notification } from 'antd';
+import { ConfigProvider, Empty, Card, Table, message, notification, Tag } from 'antd';
 import Util from '../common/util';
 import Ajax from '../common/ajax';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -44,7 +44,7 @@ class StarsInfo extends React.Component {
                     return (
                         <div>
                             <CopyToClipboard onCopy={ this.onCopy } text={ row.clone }>
-                                <a>clone</a>
+                              <Tag color="#2db7f5" style={{ cursor: 'pointer' }}>Clone</Tag>
                             </CopyToClipboard>
                         </div>
                     )

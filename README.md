@@ -34,7 +34,7 @@
         $ npm run build
         
 ##### 5、项目部署至github-page(https://linkun-wang.github.io/my-react-app/)
-        $ yarn run deploy
+        $ npm run deploy
 	
 --------------------------------------------------
 #### PS: 开发中零碎知识点记录：
